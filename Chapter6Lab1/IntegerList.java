@@ -50,9 +50,10 @@ public class IntegerList{
         for (int i=0; i < list.length-1; i++)
             {
                 //find smallest element in list starting at location i
-                if(list[i] < list[i+1]) 
+                if(list[i] < list[i+1]) {
                 //swap list[i] with smallest element
                 
             }
     }
+   }
 }
