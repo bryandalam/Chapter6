@@ -24,6 +24,7 @@ public class Square
 
 
     int[][] square;
+    int sum = 0;
 
    
 
@@ -34,10 +35,10 @@ public class Square
 
     //--------------------------------------
 
-    public Square()
+    public Square(int size)
 
     {
-
+        this.square = new int [size][size];
        
 
     }
@@ -52,8 +53,10 @@ public class Square
     public int sumRow(int row)
 
     {
-
-        return 0;
+        for (int i = 0; i < square.length; i++) {
+            sum += square[i];
+        }
+        return sum;
 
     }
 
